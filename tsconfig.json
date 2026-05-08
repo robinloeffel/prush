@@ -1,0 +1,10 @@
+{
+  "extends": "robins-tsconfig",
+  "include": ["src"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "noEmit": false,
+    "declaration": true,
+    "outDir": "dist"
+  }
+}

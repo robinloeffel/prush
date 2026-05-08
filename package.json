@@ -1,0 +1,27 @@
+{
+  "name": "prush",
+  "version": "0.0.1",
+  "description": "As in like \"resolve until then, or else...\" 🌝",
+  "keywords": [
+    "promise",
+    "promise-rush",
+    "promise-timeout",
+    "Promise.race",
+    "timeout"
+  ],
+  "repository": "https://github.com/robinloeffel/prush",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "rm -rf dist && tsc",
+    "start": "tsc -w"
+  },
+  "devDependencies": {
+    "eslint": "10.3.0",
+    "eslint-config-sweet": "32.0.0",
+    "robins-tsconfig": "5.0.0",
+    "typescript": "6.0.3"
+  }
+}
