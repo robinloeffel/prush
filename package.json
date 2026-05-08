@@ -1,5 +1,5 @@
 {
-  "name": "prush",
+  "name": "@rbnlffl/prush",
   "version": "0.0.1",
   "description": "As in like \"resolve until then, or else...\" 🌝",
   "keywords": [
@@ -23,5 +23,8 @@
     "eslint-config-sweet": "32.0.0",
     "robins-tsconfig": "5.0.0",
     "typescript": "6.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
