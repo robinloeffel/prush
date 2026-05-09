@@ -1,15 +1,13 @@
 {
-  "name": "@rbnlffl/prush",
-  "version": "0.0.2",
-  "description": "As in like \"resolve until then, or else...\" 🌝",
+  "name": "@rbnlffl/race",
+  "version": "0.0.3",
+  "description": "Whoever resolves first, wins! 🏃‍♂️",
   "keywords": [
-    "promise",
-    "promise-rush",
-    "promise-timeout",
     "Promise.race",
+    "promise",
     "timeout"
   ],
-  "repository": "https://github.com/robinloeffel/prush",
+  "repository": "https://github.com/robinloeffel/race",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",

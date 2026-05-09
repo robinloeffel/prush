@@ -1,5 +1,10 @@
 # changelog
 
+## 0.0.3
+
+- rename
+- take array of promises
+
 ## 0.0.2
 
 - only ship what's necessary

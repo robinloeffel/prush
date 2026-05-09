@@ -1,34 +1,37 @@
-# @rbnlffl/prush
+# @rbnlffl/race
 
-![latest version](https://badgen/npm/v/@rbnlffl/prush)
-![npm downloads a week](https://badgen/npm/dw/@rbnlffl/prush)
-![typescript types](https://badgen.net/npm/types/@rbnlffl/prush)
-![license](https://badgen/npm/l/license/@rbnlffl/prush)
+![latest version](https://badgen.net/npm/v/@rbnlffl/race)
+![npm downloads a week](https://badgen.net/npm/dw/@rbnlffl/race)
+![typescript types](https://badgen.net/npm/types/@rbnlffl/race)
+![license](https://badgen.net/npm/license/@rbnlffl/race)
 
-> **pr**omise r**ush** — As in like "resolve until then, or else..." 🌝
+> Whoever resolves first, wins! 🏃‍♂️
 
-Teeny-tiny wrapper around [`Promise.race`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race).
+Teeny-tiny wrapper around [`Promise.race`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/race) that adds a timeout.
 
 ## Installation
 
 ```bash
-npm i @rbnlffl/prush
+npm i @rbnlffl/race
 ```
 
 ## Usage
 
 ```typescript
-import prush from "@rbnlffl/prush";
+import race from "@rbnlffl/race";
 
-const charmander = async () => {
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon/charmander");
-  return response.json();
-};
+// race a single promise against a timeout
+const result = await race(someAsyncOperation(), 5000);
 
-const data = await prush(charmander(), 5000);
+// race multiple promises: resolves with whichever settles first
+const first = await race([fetchFromPrimary(), fetchFromFallback()], 5000);
 ```
 
-If the promise resolves within 5000ms, you'll get the result. If not, it'll reject.
+If the timeout expires before any promise settles, `race` rejects with an `Error`:
+
+```sh
+Error: Not settled after 5000ms!
+```
 
 ## License
 
