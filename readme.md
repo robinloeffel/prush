@@ -29,7 +29,7 @@ const first = await race([fetchFromPrimary(), fetchFromFallback()], 5000);
 
 If the timeout expires before any promise settles, `race` rejects with an `Error`:
 
-```sh
+```bash
 Error: Not settled after 5000ms!
 ```
 
