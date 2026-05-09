@@ -1,9 +1,9 @@
 # @rbnlffl/race
 
-![latest version](https://badgen.net/npm/v/@rbnlffl/race)
-![npm downloads a week](https://badgen.net/npm/dw/@rbnlffl/race)
-![typescript types](https://badgen.net/npm/types/@rbnlffl/race)
-![license](https://badgen.net/npm/license/@rbnlffl/race)
+[![latest version](https://npmx.dev/api/registry/badge/version/@rbnlffl/race)](https://npmx.dev/@rbnlffl/race)
+[![npm downloads](https://npmx.dev/api/registry/badge/downloads/@rbnlffl/race)](https://npmx.dev/@rbnlffl/race)
+[![typescript types](https://npmx.dev/api/registry/badge/types/@rbnlffl/race)](https://npmx.dev/@rbnlffl/race)
+[![license](https://npmx.dev/api/registry/badge/license/@rbnlffl/race)](https://npmx.dev/@rbnlffl/race)
 
 > Whoever resolves first, wins! 🏃‍♂️
 
